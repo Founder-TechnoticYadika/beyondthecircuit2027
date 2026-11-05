@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050914;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background: rgba(5, 9, 20, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(37, 139, 255, 0.1);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.logo span {
+    color: #258BFF;
+}
+
+.navbar nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover, .cta-nav {
+    color: #42D9FF !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #0B1426 0%, #050914 100%);
+    padding: 0 20px;
+}
+
+.badge {
+    background: rgba(37, 139, 255, 0.15);
+    color: #42D9FF;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(66, 217, 255, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 15px 0;
+    background: linear-gradient(to right, #ffffff, #42D9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Glassmorphism Cards */
+.section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.card-grid, .timeline-container {
+    display: grid;
+    gap: 20px;
+}
+
+.card, .timeline-item, .payment-card, form {
+    background: rgba(11, 20, 38, 0.7);
+    border: 1px solid rgba(37, 139, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item .price {
+    display: inline-block;
+    margin-top: 10px;
+    color: #42D9FF;
+    font-weight: 700;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #cbd5e1;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #123B78;
+    background: #050914;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #258BFF, #123B78);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 15px rgba(37, 139, 255, 0.5);
+}
+
+.qris-img {
+    max-width: 250px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.quota-box {
+    margin: 20px 0;
+    font-weight: 600;
+    color: #42D9FF;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.hidden { display: none; }
